@@ -21,7 +21,7 @@ var buttons = (e)=>{
     //id de boton
     var btnid = e.target.id
 
-    //console.log(btnid);
+    console.log(btnid);
     //desacoplar arreglo o vector en posicion 0 y 1
     var number = btntxt[1]
     var letter = btntxt[0]
@@ -65,6 +65,7 @@ var buttons = (e)=>{
         }
     }
 
+     //if de validaciones para letras
 
     if(num[num.length-1] === '0' && lett===''){
         if(letter === 'A'){
@@ -96,6 +97,9 @@ var buttons = (e)=>{
 
 }
 
+console.log(buttons);
+
+//evento de click variable declarada botones
 for(let i=0; i < btn.length; i += 1){
     btn[i].addEventListener('click', buttons)
 }
